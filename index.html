@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>画像をアップロードして動かすアプリ</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/loading.js" defer></script>
+    <script src="./js/upload.js" defer></script>
+    <script src="./js/collision.js" defer></script>
+    <script src="./js/movement.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>動く画像アップロード</h1>
+      <div class="upload-area">
+        <button id="upload-button">画像をアップロード</button>
+        <input type="file" id="file-input" accept="image/*" multiple hidden />
+      </div>
+      <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div id="loading-mask" class="loading-mask hidden">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </body>
+</html>
